@@ -1,0 +1,6 @@
+.env
+__pycache__/
+*.pyc
+backend/data/chroma_db/
+backend/data/used_chunks.json
+backend/data/viva_results.json
