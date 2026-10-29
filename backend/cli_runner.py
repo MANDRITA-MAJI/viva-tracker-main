@@ -67,6 +67,7 @@ def run_cli_viva():
         print("-" * 55)
         print(f"Question {idx}/5 [{q.difficulty.upper()}]:")
         print(f"{q.question}\n")
+        print(f"-> Ideal Answer: {q.ideal_answer}\n")
 
         # Get student's answer via terminal
         student_ans = input("Your Answer: ").strip()
@@ -87,6 +88,7 @@ def run_cli_viva():
             total_score += score
             print(f"-> Score: {score}/10")
             print(f"-> Feedback: {feedback}\n")
+            print(f"-> Ideal Answer: {q.ideal_answer}\n")
 
             qa_records.append({
                 "question": q.question,
